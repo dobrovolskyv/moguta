@@ -1,0 +1,39 @@
+.inner__cart-img {
+  width: 100%;
+  padding: 20px;
+}
+.blogs__inner {
+  display: flex;
+}
+.inner__cart {
+  border: 1px solid #e8e8e8;
+  margin-right: 15px;
+}
+.inner__cart-date {
+  color: #9174ce;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  line-height: 23px;
+  position: relative;
+  text-align: left;
+  width: 100%;
+  margin: 15px 0;
+}
+
+.inner__cart-text {
+  font-size: 14px;
+  color: #131414;
+  float: left;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 22px;
+  margin-bottom: 10px;
+  text-align: left;
+  text-transform: capitalize;
+  letter-spacing: 0.8px;
+}
+.blogs__inner .slick-arrow {
+  display: none;
+  visibility: hidden;
+}

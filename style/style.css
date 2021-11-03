@@ -1,0 +1,40 @@
+@import "./header.css";
+@import "./products.css";
+@import "./our-products.css";
+@import "./banner.css";
+@import "./special.css";
+@import "./sponsors.css";
+@import "./blogs.css";
+@import "./services.css";
+@import "./footer.css";
+@import "./adaptive.css";
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif;
+  color: black;
+  background-color: rgb(255, 227, 227);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 30px;
+  background-color: #fff;
+}

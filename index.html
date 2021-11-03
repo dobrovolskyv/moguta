@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style/slick.css" />
+    <link rel="stylesheet" href="style/magnific-popup.css" />
+    <link rel="stylesheet" href="./style/normalize.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Shoplist</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header-inner__top">
+            <p class="top-text">Good Luck With Shopping. Call Us Free 24/7 : (555) 172-244-7888 | (555) 172-244</p>
+            <div class="top__link">
+              <ul class="top_list">
+                <li class="top_item">
+                  <a href="" class="top__item-link">
+                    <img src="" alt="" />
+                    <p>whis list</p>
+                  </a>
+                </li>
+                <li class="top_item">
+                  <a href="" class="top__item-link">
+                    <img src="" alt="" />
+                    <p>checkout</p>
+                  </a>
+                </li>
+              </ul>
+              <div class="top__wish-list">
+                <!-- <a class="wish-list__link" href="#">
+                  <svg
+                    class="wish-list__svg"
+                    width="15"
+                    height="13"
+                    viewBox="0 0 15 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.6371 2.66339C14.4044 2.14206 14.0688 1.66963 13.6491 1.27256C13.2292 0.874301 12.734 0.557811 12.1906 0.340299C11.6272 0.113857 11.0228 -0.0020487 10.4127 -0.000690098C9.55665 -0.000690098 8.72148 0.226076 7.99571 0.654412C7.82208 0.756876 7.65713 0.869419 7.50086 0.992041C7.34459 0.869419 7.17964 0.756876 7.00601 0.654412C6.28023 0.226076 5.44507 -0.000690098 4.58907 -0.000690098C3.97268 -0.000690098 3.37539 0.113533 2.81109 0.340299C2.26588 0.558666 1.77451 0.872779 1.35259 1.27256C0.932393 1.66918 0.596731 2.14172 0.364625 2.66339C0.123278 3.20595 0 3.7821 0 4.37505C0 4.93441 0.118069 5.51728 0.352471 6.11023C0.548674 6.60576 0.829956 7.11976 1.18937 7.6388C1.75888 8.4602 2.54196 9.31687 3.51429 10.1853C5.12559 11.6248 6.72126 12.6193 6.78897 12.6596L7.20048 12.9149C7.38279 13.0274 7.61719 13.0274 7.7995 12.9149L8.21101 12.6596C8.27873 12.6176 9.87266 11.6248 11.4857 10.1853C12.458 9.31687 13.2411 8.4602 13.8106 7.6388C14.17 7.11976 14.453 6.60576 14.6475 6.11023C14.8819 5.51728 15 4.93441 15 4.37505C15.0017 3.7821 14.8784 3.20595 14.6371 2.66339V2.66339Z"
+                      fill="black"
+                    />
+                  </svg>
+                  <p class="wish-list__text">Whish list<span id="whish-list-count">(0)</span></p></a
+                > -->
+              </div>
+
+              <a class="link__checkout" href="#">
+                <img class="checkout__img" src="./img/arrow-checkout.svg" alt="arrow" /> Checkout
+              </a>
+            </div>
+          </div>
+          <div class="header-inner__bottom">
+            <div class="burger">
+              <div class="burger1"></div>
+              <div class="burger2"></div>
+              <div class="burger3"></div>
+            </div>
+            <img class="header-logo" src="./img/logo.png" alt="logo" />
+            <div class="header__search">
+              <input class="header__search-input" type="text" placeholder="Search" />
+              <div class="serch">
+                <img class="header__search-img" src="./img/search.svg" alt="search" />
+              </div>
+            </div>
+
+            <div class="header__right-div">
+              <div class="header__account">
+                <img class="header__right-img" src="./img/account.svg" alt="accaunt" />
+                <h2 class="account-link__title">My Account</h2>
+                <div class="account-link__menu">
+                  <ul class="account__list">
+                    <li class="account__item"><a href="#">Register</a></li>
+                    <li class="account__item"><a href="#">Login</a></li>
+                    <li class="account__item">
+                      Language
+                      <ul class="account__items-language">
+                        <li>
+                          <a href="#"><img src="./img/engl.png" alt="" /></a>
+                        </li>
+                        <li>
+                          <a href="#"><img src="./img/ar.png" alt="" /></a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="account__item">Currency</li>
+                    <ul class="account__list-currency">
+                      <li class="item__currency">
+                        <a class="item-currency__link" href="#"><p class="currency-text">€</p> </a>
+                      </li>
+                      <li class="item__currency">
+                        <a class="item-currency__link" href="#"> <p class="currency-text">£</p></a>
+                      </li>
+                      <li class="item__currency">
+                        <a class="item-currency__link" href="#"> <p class="currency-text">$</p></a>
+                      </li>
+                    </ul>
+                  </ul>
+                </div>
+              </div>
+              <div class="header__cart">
+                <img class="header__right-img" src="./img/cart.png" alt="cart" />
+                <h2 class="account-link__title">My Cart</h2>
+              </div>
+            </div>
+          </div>
+          <div class="header__search-media">
+            <input class="header__search-input" type="text" placeholder="Search" />
+            <div class="serch">
+              <img class="header__search-img-media" src="./img/search.svg" alt="search" />
+            </div>
+          </div>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="">HOME</a>
+              </li>
+              <li class="nav__item hide">
+                <a href="">CLOTHES</a>
+                <div class="clothes__content">
+                  <ul class="clothes__kids-list">
+                    <li class="clothes__title"><a href="#">KIDS</a></li>
+                    <li class="clothes__item"><a href="#">Capri</a></li>
+                    <li class="clothes__item"><a href="#">Jacket</a></li>
+                    <li class="clothes__item"><a href="#">Shorts</a></li>
+                  </ul>
+                  <ul class="clothes__women-list">
+                    <li class="clothes__title"><a href="#">WOMEN</a></li>
+                    <li class="clothes__item"><a href="#">Dress</a></li>
+                    <li class="clothes__item"><a href="#">Frocks</a></li>
+                    <li class="clothes__item"><a href="#">Saree</a></li>
+                    <li class="clothes__item"><a href="#">Suits</a></li>
+                  </ul>
+                  <ul class="clothes__men-list">
+                    <li class="clothes__title"><a href="#">MEN</a></li>
+                    <li class="clothes__item"><a href="#">Denim</a></li>
+                    <li class="clothes__item"><a href="#">Jeans</a></li>
+                    <li class="clothes__item"><a href="#">Shirts</a></li>
+                    <li class="clothes__item"><a href="#">T-shirts</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav__item">
+                <a href="">ACCESSORIES</a>
+                <ul class="accessories__list">
+                  <li class="accessories__item"><a href="#">Cap</a></li>
+                  <li class="accessories__item"><a href="#">Handbangs</a></li>
+                </ul>
+              </li>
+              <li class="nav__item"><a href="">ART</a></li>
+              <li class="nav__item">
+                <a href="">KITCHEN ACCESSORIES</a>
+                <ul class="kitchen-accessories__list">
+                  <li class="kitchen-accessories__item">
+                    <a href="#">Blender</a>
+                    <ul class="blender__list">
+                      <li class="blender__item"><a class="bldender__link" href="#">Grater</a></li>
+                      <li class="blender__item"><a class="bldender__link" href="#">Whisk</a></li>
+                    </ul>
+                  </li>
+                  <li class="kitchen-accessories__item"><a href="#">Colander</a></li>
+                  <li class="kitchen-accessories__item"><a href="#">Cutting Board</a></li>
+                  <li class="kitchen-accessories__item"><a href="#">Mixing Bowls</a></li>
+                  <li class="kitchen-accessories__item"><a href="#">Rolling Pin</a></li>
+                </ul>
+              </li>
+              <li class="nav__item"><a href="">SMART WATCH</a></li>
+              <li class="nav__item">
+                <a href="">MORE</a>
+                <ul class="more__list">
+                  <li class="more__item"><a href="#">Electronics</a></li>
+                  <li class="more__item"><a href="#">Home Accessories</a></li>
+                </ul>
+              </li>
+              <li class="nav__item"><a href="">BLOGS</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="products">
+        <div class="container">
+          <div class="products__inner">
+            <div class="products__inner__top">
+              <div class="top__slides">
+                <div class="top__slide">
+                  <a href="#"><img src="./img/slide1.jpg" alt="" /></a>
+                </div>
+                <div class="top__slide">
+                  <a href="#"><img src="./img/slide2.jpg" alt="" /></a>
+                </div>
+              </div>
+              <div class="top__subslides">
+                <a href=""><img src="./img/banner-1.jpg" alt="" /></a>
+                <a href=""><img class="subslides-img" src="./img/banner-2.jpg" alt="" /></a>
+              </div>
+            </div>
+            <div class="products__inner__bottom">
+              <a class="inner__bottom-link-1" href="">
+                <h2 class="bottom-link__title">EXTRAORDINARY</h2>
+                <p class="bottom-link__text">Handbags<span class="bottom-link__span-1">Hot</span></p>
+              </a>
+              <a class="inner__bottom-link-2" href="">
+                <h2 class="bottom-link__title">ready lighting?</h2>
+                <p class="bottom-link__text">Hot offer<span class="bottom-link__span-2">Colorful</span></p>
+              </a>
+              <a class="inner__bottom-link-3" href="">
+                <h2 class="bottom-link__title">EXTRAORDINARY<span class="bottom-link__span-3">Limited</span></h2>
+
+                <p class="bottom-link__text">Extraordinary</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="our__products">
+        <div class="container">
+          <div class="our__products__header">
+            <h1 class="title">OUR PRODUCTS</h1>
+            <div class="tabheader__items">
+              <div class="tabheader__item">Latest</div>
+              <div class="tabheader__item">Bestseller</div>
+              <div class="tabheader__item">special</div>
+            </div>
+          </div>
+          <div class="our_products__tabcontainer">
+            <div class="tabcontainer__slides-latest">
+              <div class="tabcontent">
+                <img class="tabcontent__img" src="./img/tabslide-1.jpg" alt="" />
+                <h3 class="tabcontent__title">Foramationdi Venkash</h3>
+                <img class="tabcontetn__img-stars" src="./img/5_stars.svg" alt="" />
+                <div class="tabcontent__raiting"></div>
+                <div class="tabcontent__price">
+                  <p class="tabcontent__new-price">$122.00</p>
+                  <span class="tabcontent__sale">50%</span>
+                  <p class="tabcontent__old-price">$241.99</p>
+                </div>
+                <button class="tabcontent__btn" type="submit">ADD TO CART</button>
+              </div>
+              <div class="tabcontent">
+                <img class="tabcontent__img" src="./img/tabslide-2.jpg" alt="" />
+                <h3 class="tabcontent__title">Foramationdi Venkash</h3>
+                <img class="tabcontetn__img-stars" src="./img/3_stars.svg" alt="" />
+                <div class="tabcontent__raiting"></div>
+                <div class="tabcontent__price">
+                  <p class="tabcontent__new-price">$122.00</p>
+                  <span class="tabcontent__sale">50%</span>
+                  <p class="tabcontent__old-price">$241.99</p>
+                </div>
+                <button class="tabcontent__btn" type="submit">ADD TO CART</button>
+              </div>
+              <div class="tabcontent">
+                <img class="tabcontent__img" src="./img/tabslide-3.jpg" alt="" />
+                <h3 class="tabcontent__title">Foramationdi Venkash</h3>
+                <img class="tabcontetn__img-stars" src="./img/5_stars.svg" alt="" />
+                <div class="tabcontent__raiting"></div>
+                <div class="tabcontent__price">
+                  <p class="tabcontent__new-price">$122.00</p>
+                  <span class="tabcontent__sale">50%</span>
+                  <p class="tabcontent__old-price">$241.99</p>
+                </div>
+                <button class="tabcontent__btn" type="submit">ADD TO CART</button>
+              </div>
+              <div class="tabcontent">
+                <img class="tabcontent__img" src="./img/tabslide-4.jpg" alt="" />
+                <h3 class="tabcontent__title">Foramationdi Venkash</h3>
+                <img class="tabcontetn__img-stars" src="./img/5gold_stars.svg" alt="" />
+                <div class="tabcontent__raiting"></div>
+                <div class="tabcontent__price">
+                  <p class="tabcontent__new-price">$122.00</p>
+                  <span class="tabcontent__sale">50%</span>
+                  <p class="tabcontent__old-price">$241.99</p>
+                </div>
+                <button class="tabcontent__btn" type="submit">ADD TO CART</button>
+              </div>
+              <div class="tabcontent">
+                <img class="tabcontent__img" src="./img/tabslide-5.jpg" alt="" />
+                <h3 class="tabcontent__title">Foramationdi Venkash</h3>
+                <div class="tabcontent__raiting"></div>
+                <div class="tabcontent__price">
+                  <p class="tabcontent__new-price">$122.00</p>
+                  <span class="tabcontent__sale">50%</span>
+                  <p class="tabcontent__old-price">$241.99</p>
+                </div>
+                <button class="tabcontent__btn" type="submit">ADD TO CART</button>
+              </div>
+              <div class="tabcontent">
+                <img class="tabcontent__img" src="./img/tabslide-1.jpg" alt="" />
+                <h3 class="tabcontent__title">Foramationdi Venkash</h3>
+                <div class="tabcontent__raiting"></div>
+                <div class="tabcontent__price">
+                  <p class="tabcontent__new-price">$122.00</p>
+                  <span class="tabcontent__sale">50%</span>
+                  <p class="tabcontent__old-price">$241.99</p>
+                </div>
+                <button class="tabcontent__btn" type="submit">ADD TO CART</button>
+              </div>
+              <div class="tabcontent">
+                <img class="tabcontent__img" src="./img/tabslide-2.jpg" alt="" />
+                <h3 class="tabcontent__title">Foramationdi Venkash</h3>
+                <div class="tabcontent__raiting"></div>
+                <div class="tabcontent__price">
+                  <p class="tabcontent__new-price">$122.00</p>
+                  <span class="tabcontent__sale">50%</span>
+                  <p class="tabcontent__old-price">$241.99</p>
+                </div>
+                <button class="tabcontent__btn" type="submit">ADD TO CART</button>
+              </div>
+              <div class="tabcontent">
+                <img class="tabcontent__img" src="./img/tabslide-3.jpg" alt="" />
+                <h3 class="tabcontent__title">Foramationdi Venkash</h3>
+                <div class="tabcontent__raiting"></div>
+                <div class="tabcontent__price">
+                  <p class="tabcontent__new-price">$122.00</p>
+                  <span class="tabcontent__sale">50%</span>
+                  <p class="tabcontent__old-price">$241.99</p>
+                </div>
+                <button class="tabcontent__btn" type="submit">ADD TO CART</button>
+              </div>
+              <div class="tabcontent">
+                <img class="tabcontent__img" src="./img/tabslide-4.jpg" alt="" />
+                <h3 class="tabcontent__title">Foramationdi Venkash</h3>
+                <div class="tabcontent__raiting"></div>
+                <div class="tabcontent__price">
+                  <p class="tabcontent__new-price">$122.00</p>
+                  <span class="tabcontent__sale">50%</span>
+                  <p class="tabcontent__old-price">$241.99</p>
+                </div>
+                <button class="tabcontent__btn" type="submit">ADD TO CART</button>
+              </div>
+              <div class="tabcontent">
+                <img class="tabcontent__img" src="./img/tabslide-5.jpg" alt="" />
+                <h3 class="tabcontent__title">Foramationdi Venkash</h3>
+                <div class="tabcontent__raiting"></div>
+                <div class="tabcontent__price">
+                  <p class="tabcontent__new-price">$122.00</p>
+                  <span class="tabcontent__sale">50%</span>
+                  <p class="tabcontent__old-price">$241.99</p>
+                </div>
+                <button class="tabcontent__btn" type="submit">ADD TO CART</button>
+              </div>
+            </div>
+            <div class="tabcontainer__slides-bestseller hide">
+              <div class="tabcontent">
+                <img class="tabcontent__img" src="./img/tabslide-1.jpg" alt="" />
+                <h3 class="tabcontent__title">Foramationdi Venkash</h3>
+                <div class="tabcontent__raiting"></div>
+                <div class="tabcontent__price">
+                  <p class="tabcontent__new-price">$122.00</p>
+                  <span class="tabcontent__sale">50%</span>
+                  <p class="tabcontent__old-price">$241.99</p>
+                </div>
+                <button class="tabcontent__btn" type="submit">ADD TO CART</button>
+              </div>
+              <div class="tabcontent">
+                <img class="tabcontent__img" src="./img/tabslide-2.jpg" alt="" />
+                <h3 class="tabcontent__title">Foramationdi Venkash</h3>
+                <div class="tabcontent__raiting"></div>
+                <div class="tabcontent__price">
+                  <p class="tabcontent__new-price">$122.00</p>
+                  <span class="tabcontent__sale">50%</span>
+                  <p class="tabcontent__old-price">$241.99</p>
+                </div>
+                <button class="tabcontent__btn" type="submit">ADD TO CART</button>
+              </div>
+              <div class="tabcontent">
+                <img class="tabcontent__img" src="./img/tabslide-3.jpg" alt="" />
+                <h3 class="tabcontent__title">Foramationdi Venkash</h3>
+                <div class="tabcontent__raiting"></div>
+                <div class="tabcontent__price">
+                  <p class="tabcontent__new-price">$122.00</p>
+                  <span class="tabcontent__sale">50%</span>
+                  <p class="tabcontent__old-price">$241.99</p>
+                </div>
+                <button class="tabcontent__btn" type="submit">ADD TO CART</button>
+              </div>
+              <div class="tabcontent">
+                <img class="tabcontent__img" src="./img/tabslide-4.jpg" alt="" />
+                <h3 class="tabcontent__title">Foramationdi Venkash</h3>
+                <div class="tabcontent__raiting"></div>
+                <div class="tabcontent__price">
+                  <p class="tabcontent__new-price">$122.00</p>
+                  <span class="tabcontent__sale">50%</span>
+                  <p class="tabcontent__old-price">$241.99</p>
+                </div>
+                <button class="tabcontent__btn" type="submit">ADD TO CART</button>
+              </div>
+              <div class="tabcontent">
+                <img class="tabcontent__img" src="./img/tabslide-5.jpg" alt="" />
+                <h3 class="tabcontent__title">Foramationdi Venkash</h3>
+                <div class="tabcontent__raiting"></div>
+                <div class="tabcontent__price">
+                  <p class="tabcontent__new-price">$122.00</p>
+                  <span class="tabcontent__sale">50%</span>
+                  <p class="tabcontent__old-price">$241.99</p>
+                </div>
+                <button class="tabcontent__btn" type="submit">ADD TO CART</button>
+              </div>
+            </div>
+            <div class="tabcontainer__slides-special hide">
+              <div class="tabcontent">
+                <img class="tabcontent__img" src="./img/tabslide-1.jpg" alt="" />
+                <h3 class="tabcontent__title">Foramationdi Venkash</h3>
+                <div class="tabcontent__raiting"></div>
+                <div class="tabcontent__price">
+                  <p class="tabcontent__new-price">$122.00</p>
+                  <span class="tabcontent__sale">50%</span>
+                  <p class="tabcontent__old-price">$241.99</p>
+                </div>
+                <button class="tabcontent__btn" type="submit">ADD TO CART</button>
+              </div>
+              <div class="tabcontent">
+                <img class="tabcontent__img" src="./img/tabslide-2.jpg" alt="" />
+                <h3 class="tabcontent__title">Foramationdi Venkash</h3>
+                <div class="tabcontent__raiting"></div>
+                <div class="tabcontent__price">
+                  <p class="tabcontent__new-price">$122.00</p>
+                  <span class="tabcontent__sale">50%</span>
+                  <p class="tabcontent__old-price">$241.99</p>
+                </div>
+                <button class="tabcontent__btn" type="submit">ADD TO CART</button>
+              </div>
+              <div class="tabcontent">
+                <img class="tabcontent__img" src="./img/tabslide-3.jpg" alt="" />
+                <h3 class="tabcontent__title">Foramationdi Venkash</h3>
+                <div class="tabcontent__raiting"></div>
+                <div class="tabcontent__price">
+                  <p class="tabcontent__new-price">$122.00</p>
+                  <span class="tabcontent__sale">50%</span>
+                  <p class="tabcontent__old-price">$241.99</p>
+                </div>
+                <button class="tabcontent__btn" type="submit">ADD TO CART</button>
+              </div>
+              <div class="tabcontent">
+                <img class="tabcontent__img" src="./img/tabslide-4.jpg" alt="" />
+                <h3 class="tabcontent__title">Foramationdi Venkash</h3>
+                <div class="tabcontent__raiting"></div>
+                <div class="tabcontent__price">
+                  <p class="tabcontent__new-price">$122.00</p>
+                  <span class="tabcontent__sale">50%</span>
+                  <p class="tabcontent__old-price">$241.99</p>
+                </div>
+                <button class="tabcontent__btn" type="submit">ADD TO CART</button>
+              </div>
+              <div class="tabcontent">
+                <img class="tabcontent__img" src="./img/tabslide-5.jpg" alt="" />
+                <h3 class="tabcontent__title">Foramationdi Venkash</h3>
+                <div class="tabcontent__raiting"></div>
+                <div class="tabcontent__price">
+                  <p class="tabcontent__new-price">$122.00</p>
+                  <span class="tabcontent__sale">50%</span>
+                  <p class="tabcontent__old-price">$241.99</p>
+                </div>
+                <button class="tabcontent__btn" type="submit">ADD TO CART</button>
+              </div>
+              <div class="tabcontent">
+                <img class="tabcontent__img" src="./img/tabslide-3.jpg" alt="" />
+                <h3 class="tabcontent__title">Foramationdi Venkash</h3>
+                <div class="tabcontent__raiting"></div>
+                <div class="tabcontent__price">
+                  <p class="tabcontent__new-price">$122.00</p>
+                  <span class="tabcontent__sale">50%</span>
+                  <p class="tabcontent__old-price">$241.99</p>
+                </div>
+                <button class="tabcontent__btn" type="submit">ADD TO CART</button>
+              </div>
+              <div class="tabcontent">
+                <img class="tabcontent__img" src="./img/tabslide-4.jpg" alt="" />
+                <h3 class="tabcontent__title">Foramationdi Venkash</h3>
+                <div class="tabcontent__raiting"></div>
+                <div class="tabcontent__price">
+                  <p class="tabcontent__new-price">$122.00</p>
+                  <span class="tabcontent__sale">50%</span>
+                  <p class="tabcontent__old-price">$241.99</p>
+                </div>
+                <button class="tabcontent__btn" type="submit">ADD TO CART</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="banner">
+        <div class="container">
+          <div class="banner__inner">
+            <div class="inner__fashion">
+              <div class="fashion__content">
+                <p class="fashion__sale">40% off</p>
+                <h2 class="fashion__title">FASHION LAB</h2>
+                <h3 class="fashion__subtitle">Explore Our Range</h3>
+              </div>
+            </div>
+            <div class="inner__dron">
+              <div class="fashion__content">
+                <p class="fashion__sale">50% off</p>
+                <h2 class="fashion__title">ELECT DRON</h2>
+                <h3 class="fashion__subtitle">Stylish Designs</h3>
+              </div>
+            </div>
+            <div class="inner__special">
+              <div class="fashion__content">
+                <p class="fashion__sale">LIMITED EDITION</p>
+                <h2 class="fashion__title">SUMMER SPECIAL</h2>
+                <h3 class="fashion__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="specials">
+        <div class="container">
+          <div class="specials__inner">
+            <h1 class="spceials__title">SPECIAL</h1>
+            <div class="tabcontainer__slides-latest">
+              <div class="tabcontent">
+                <img class="tabcontent__img" src="./img/tabslide-1.jpg" alt="" />
+                <h3 class="tabcontent__title">Foramationdi Venkash</h3>
+                <div class="tabcontent__raiting"></div>
+                <div class="tabcontent__price">
+                  <p class="tabcontent__new-price">$122.00</p>
+                  <span class="tabcontent__sale">50%</span>
+                  <p class="tabcontent__old-price">$241.99</p>
+                </div>
+                <button class="tabcontent__btn" type="submit">ADD TO CART</button>
+              </div>
+              <div class="tabcontent">
+                <img class="tabcontent__img" src="./img/tabslide-2.jpg" alt="" />
+                <h3 class="tabcontent__title">Foramationdi Venkash</h3>
+                <div class="tabcontent__raiting"></div>
+                <div class="tabcontent__price">
+                  <p class="tabcontent__new-price">$122.00</p>
+                  <span class="tabcontent__sale">50%</span>
+                  <p class="tabcontent__old-price">$241.99</p>
+                </div>
+                <button class="tabcontent__btn" type="submit">ADD TO CART</button>
+              </div>
+              <div class="tabcontent">
+                <img class="tabcontent__img" src="./img/tabslide-3.jpg" alt="" />
+                <h3 class="tabcontent__title">Foramationdi Venkash</h3>
+                <div class="tabcontent__raiting"></div>
+                <div class="tabcontent__price">
+                  <p class="tabcontent__new-price">$122.00</p>
+                  <span class="tabcontent__sale">50%</span>
+                  <p class="tabcontent__old-price">$241.99</p>
+                </div>
+                <button class="tabcontent__btn" type="submit">ADD TO CART</button>
+              </div>
+              <div class="tabcontent">
+                <img class="tabcontent__img" src="./img/tabslide-4.jpg" alt="" />
+                <h3 class="tabcontent__title">Foramationdi Venkash</h3>
+                <div class="tabcontent__raiting"></div>
+                <div class="tabcontent__price">
+                  <p class="tabcontent__new-price">$122.00</p>
+                  <span class="tabcontent__sale">50%</span>
+                  <p class="tabcontent__old-price">$241.99</p>
+                </div>
+                <button class="tabcontent__btn" type="submit">ADD TO CART</button>
+              </div>
+              <div class="tabcontent">
+                <img class="tabcontent__img" src="./img/tabslide-5.jpg" alt="" />
+                <h3 class="tabcontent__title">Foramationdi Venkash</h3>
+                <div class="tabcontent__raiting"></div>
+                <div class="tabcontent__price">
+                  <p class="tabcontent__new-price">$122.00</p>
+                  <span class="tabcontent__sale">50%</span>
+                  <p class="tabcontent__old-price">$241.99</p>
+                </div>
+                <button class="tabcontent__btn" type="submit">ADD TO CART</button>
+              </div>
+              <div class="tabcontent">
+                <img class="tabcontent__img" src="./img/tabslide-1.jpg" alt="" />
+                <h3 class="tabcontent__title">Foramationdi Venkash</h3>
+                <div class="tabcontent__raiting"></div>
+                <div class="tabcontent__price">
+                  <p class="tabcontent__new-price">$122.00</p>
+                  <span class="tabcontent__sale">50%</span>
+                  <p class="tabcontent__old-price">$241.99</p>
+                </div>
+                <button class="tabcontent__btn" type="submit">ADD TO CART</button>
+              </div>
+              <div class="tabcontent">
+                <img class="tabcontent__img" src="./img/tabslide-2.jpg" alt="" />
+                <h3 class="tabcontent__title">Foramationdi Venkash</h3>
+                <div class="tabcontent__raiting"></div>
+                <div class="tabcontent__price">
+                  <p class="tabcontent__new-price">$122.00</p>
+                  <span class="tabcontent__sale">50%</span>
+                  <p class="tabcontent__old-price">$241.99</p>
+                </div>
+                <button class="tabcontent__btn" type="submit">ADD TO CART</button>
+              </div>
+              <div class="tabcontent">
+                <img class="tabcontent__img" src="./img/tabslide-3.jpg" alt="" />
+                <h3 class="tabcontent__title">Foramationdi Venkash</h3>
+                <div class="tabcontent__raiting"></div>
+                <div class="tabcontent__price">
+                  <p class="tabcontent__new-price">$122.00</p>
+                  <span class="tabcontent__sale">50%</span>
+                  <p class="tabcontent__old-price">$241.99</p>
+                </div>
+                <button class="tabcontent__btn" type="submit">ADD TO CART</button>
+              </div>
+              <div class="tabcontent">
+                <img class="tabcontent__img" src="./img/tabslide-4.jpg" alt="" />
+                <h3 class="tabcontent__title">Foramationdi Venkash</h3>
+                <div class="tabcontent__raiting"></div>
+                <div class="tabcontent__price">
+                  <p class="tabcontent__new-price">$122.00</p>
+                  <span class="tabcontent__sale">50%</span>
+                  <p class="tabcontent__old-price">$241.99</p>
+                </div>
+                <button class="tabcontent__btn" type="submit">ADD TO CART</button>
+              </div>
+              <div class="tabcontent">
+                <img class="tabcontent__img" src="./img/tabslide-5.jpg" alt="" />
+                <h3 class="tabcontent__title">Foramationdi Venkash</h3>
+                <div class="tabcontent__raiting"></div>
+                <div class="tabcontent__price">
+                  <p class="tabcontent__new-price">$122.00</p>
+                  <span class="tabcontent__sale">50%</span>
+                  <p class="tabcontent__old-price">$241.99</p>
+                </div>
+                <button class="tabcontent__btn" type="submit">ADD TO CART</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="sponsors">
+        <div class="container">
+          <div class="sponsors__slides">
+            <img class="sponsors__slides-img" src="./img/brand1.png" alt="" />
+            <img src="./img/brand2.png" alt="" />
+            <img src="./img/brand3.png" alt="" />
+            <img src="./img/brand4.png" alt="" />
+            <img src="./img/brand1.png" alt="" />
+            <img src="./img/brand2.png" alt="" />
+            <img src="./img/brand3.png" alt="" />
+            <img src="./img/brand4.png" alt="" />
+            <img src="./img/brand1.png" alt="" />
+            <img src="./img/brand2.png" alt="" />
+            <img src="./img/brand3.png" alt="" />
+            <img src="./img/brand4.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <section class="blogs">
+        <div class="container">
+          <h1 class="title">LATES BLOGS</h1>
+          <div class="blogs__inner">
+            <div class="inner__cart">
+              <a href="./img/blog-1.jpg">
+                <img class="inner__cart-img" src="./img/blog-1.jpg" alt="" />
+              </a>
+              <p class="inner__cart-date">18.09.2019</p>
+              <h3 class="inner__cart-text">Ligula Quam Vestibulum Consequat Convallis</h3>
+            </div>
+            <div class="inner__cart">
+              <a href="./img/blog-2.jpg">
+                <img class="inner__cart-img" src="./img/blog-2.jpg" alt="" />
+              </a>
+              <p class="inner__cart-date">18.09.2019</p>
+              <h3 class="inner__cart-text">Ligula Quam Vestibulum Consequat Convallis</h3>
+            </div>
+            <div class="inner__cart">
+              <a href="./img/blog-3.jpg">
+                <img class="inner__cart-img" src="./img/blog-3.jpg" alt="" />
+              </a>
+              <p class="inner__cart-date">18.09.2019</p>
+              <h3 class="inner__cart-text">Ligula Quam Vestibulum Consequat Convallis</h3>
+            </div>
+            <div class="inner__cart">
+              <a href="./img/blog-4.jpg">
+                <img class="inner__cart-img" src="./img/blog-4.jpg" alt="" />
+              </a>
+              <p class="inner__cart-date">18.09.2019</p>
+              <h3 class="inner__cart-text">Ligula Quam Vestibulum Consequat Convallis</h3>
+            </div>
+            <div class="inner__cart">
+              <a href="./img/blog-5.jpg">
+                <img class="inner__cart-img" src="./img/blog-5.jpg" alt="" />
+              </a>
+              <p class="inner__cart-date">18.09.2019</p>
+              <h3 class="inner__cart-text">Ligula Quam Vestibulum Consequat Convallis</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="services">
+      <div class="container">
+        <nav class="sevices__inner">
+          <div class="services__inner__item">
+            <img src="./img/car.svg" alt="" />
+            <div class="inner__item__description">
+              <h2 class="desciption__title">Free WORLD DELIVERY</h2>
+              <p class="description__text">Orders Over $100</p>
+            </div>
+          </div>
+          <div class="services__inner__item">
+            <img src="./img/money.svg" alt="" />
+            <div class="inner__item__description">
+              <h2 class="desciption__title">Free WORLD DELIVERY</h2>
+              <p class="description__text">Orders Over $100</p>
+            </div>
+          </div>
+          <div class="services__inner__item">
+            <img src="./img/headphone.svg" alt="" />
+            <div class="inner__item__description">
+              <h2 class="desciption__title">Free WORLD DELIVERY</h2>
+              <p class="description__text">Orders Over $100</p>
+            </div>
+          </div>
+          <div class="services__inner__item">
+            <img src="./img/rotate-arrow.svg" alt="" />
+            <div class="inner__item__description">
+              <h2 class="desciption__title">Free WORLD DELIVERY</h2>
+              <p class="description__text">Orders Over $100</p>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="inner__location">
+            <ul class="location__list">
+              <li class="location__item">
+                <img class="location__img" src="./img/location.svg" alt="" class="location__img" />
+                <p class="location__text">705-Infinity Centre, Beside trafy building, united state</p>
+              </li>
+              <li class="location__item">
+                <img class="location__img" src="./img/tel.svg" alt="" class="location__img" />
+                <p class="location__text">Call us: 0123-456-789</p>
+              </li>
+              <li class="location__item">
+                <img class="location__img" src="./img/mail.svg" alt="" class="location__img" />
+                <a href="#">
+                  <p class="location__text">Support@Youstore.com</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="inner__info">
+            <h2>Information</h2>
+            <ul class="info__list">
+              <li class="info__item">
+                <img src="./img/arrow_footer.svg" alt="" class="info__img" />
+                <p class="info__text">About Us</p>
+              </li>
+              <li class="info__item">
+                <img src="./img/arrow_footer.svg" alt="" class="info__img" />
+                <p class="info__text">Delivery Information</p>
+              </li>
+              <li class="info__item">
+                <img src="./img/arrow_footer.svg" alt="" class="info__img" />
+                <p class="info__text">Privacy Policy</p>
+              </li>
+              <li class="info__item">
+                <img src="./img/arrow_footer.svg" alt="" class="info__img" />
+                <p class="info__text">Terms & Conditions</p>
+              </li>
+            </ul>
+          </div>
+          <div class="inner__info">
+            <h2>MY ACCOUNT</h2>
+            <ul class="footer__account__list">
+              <li class="footer__account__item">
+                <img src="./img/arrow_footer.svg" alt="" class="account__img" />
+                <p class="footer__account__text">My Account</p>
+              </li>
+              <li class="footer__account__item">
+                <img src="./img/arrow_footer.svg" alt="" class="account__img" />
+                <p class="footer__account__text">Specials</p>
+              </li>
+              <li class="footer__account__item">
+                <img src="./img/arrow_footer.svg" alt="" class="account__img" />
+                <p class="account__text">Contact Us</p>
+              </li>
+              <li class="footer__account__item">
+                <img src="./img/arrow_footer.svg" alt="" class="account__img" />
+                <p class="account__text">Site map</p>
+              </li>
+              <li class="footer__account__item">
+                <img src="./img/arrow_footer.svg" alt="" class="account__img" />
+                <p class="footer__account__text">Brands</p>
+              </li>
+            </ul>
+          </div>
+          <div class="info__form">
+            <h2 class="info__form-title">SIGN UP FOR NEWSLETTER</h2>
+            <div class="form__input-area">
+              <input class="form__input" type="text" placeholder="E-Mail" />
+              <button class="info__form-btn" type="submit">SUBSCRIBE</button>
+            </div>
+            <div class="socials">
+              <img src="./img/facebook.svg" alt="" />
+              <img src="./img/google.svg" alt="" />
+              <img src="./img/twitter.svg" alt="" />
+              <img src="./img/pinterest.svg" alt="" />
+              <img src="./img/instagram.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p class="copyright__text">Powered By OpenCart Your Store © 2021</p>
+          <div class="pay">
+            <img src="./img/Paypal.png" alt="paypal" />
+            <img src="./img/Paypal.png" alt="paypal" />
+            <img src="./img/Paypal.png" alt="paypal" />
+            <img src="./img/Paypal.png" alt="paypal" />
+            <img src="./img/Paypal.png" alt="paypal" />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/slides.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

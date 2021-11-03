@@ -1,0 +1,124 @@
+.title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 7px 0;
+}
+
+.our__products__header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 20px 0 0 0;
+}
+.tabheader__items {
+  display: flex;
+  margin-right: 100px;
+  align-items: center;
+  position: relative;
+}
+.tabheader__item {
+  margin-right: 30px;
+}
+.tabheader__item:hover {
+  color: #9174ce;
+}
+.tab__arrow-left {
+  position: absolute;
+  right: 60px;
+  top: -54px;
+  z-index: 5;
+  cursor: pointer;
+}
+.tab__arrow-right {
+  position: absolute;
+  right: 20px;
+  top: -54px;
+  z-index: 8;
+  cursor: pointer;
+}
+
+.tab__arrow-right path:hover,
+.tab__arrow-left path:hover {
+  fill: #9174ce;
+}
+
+.tabcontent__img:hover {
+  background: transparent;
+  color: #ffffff;
+  height: auto;
+  left: 0;
+  opacity: 0;
+  -khtml-opacity: 0;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  transition: all 0.5s linear 0s;
+  -webkit-transition: all 0.5s linear 0s;
+  -moz-transition: all 0.5s linear 0s;
+  -ms-transition: all 0.5s linear 0s;
+  -o-transition: all 0.5s linear 0s;
+  -webkit-transform: translateX(-110%);
+  -moz-transform: translateX(-110%);
+  -ms-transform: translateX(-110%);
+  -o-transform: translateX(-110%);
+  transform: translateX(-110%);
+  overflow: hidden;
+}
+
+.tabcontent__title {
+  text-align: left;
+  color: #848484;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 4px;
+  text-align: left;
+  text-decoration: none;
+  text-transform: capitalize;
+  width: 100%;
+  letter-spacing: 0.8px;
+}
+.tabcontent__price {
+  margin-top: 15px;
+}
+.tabcontent__new-price {
+  font-weight: 600;
+  float: left;
+}
+.tabcontent__sale {
+  background: #9174ce none repeat scroll 0 0;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 18px;
+  margin: 0 2px;
+  padding: 0px 2px;
+  font-weight: 600;
+  margin: 0 5px;
+}
+
+.tabcontent__old-price {
+  color: #999;
+  text-decoration: line-through;
+  margin-right: 10px;
+}
+
+.tabcontent__btn {
+  margin-top: 25px;
+  display: inline-block;
+  background-color: #9174ce;
+  color: #fff;
+  padding: 7px 10px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid #9174ce;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  -moz-border-radius: 5px;
+  font-size: 12px;
+  vertical-align: middle;
+}

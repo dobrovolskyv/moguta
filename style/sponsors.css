@@ -1,0 +1,32 @@
+.sponsors__slides {
+  background-color: rgba(170, 158, 158, 0.2);
+  width: 100%;
+  padding: 50px 50px;
+  position: relative;
+  margin-top: 100px;
+}
+
+.sponsors__slides img {
+  margin-right: 30px;
+  /* width: 10%; */
+  opacity: 0.2;
+}
+.sponsors__slides img:hover {
+  opacity: 1;
+}
+.sponsors__arrow-left {
+  position: absolute;
+  left: 10px;
+  top: 100px;
+  z-index: 4;
+}
+.sponsors__arrow-right {
+  position: absolute;
+  right: 10px;
+  top: 100px;
+  z-index: 6;
+}
+.sponsors__arrow-left path:hover,
+.sponsors__arrow-right path:hover {
+  fill: black;
+}
