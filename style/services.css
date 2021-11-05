@@ -18,6 +18,7 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
+  padding: 10px;
 }
 .services__inner__item img:hover {
   transform: rotate(360deg);

@@ -38,3 +38,22 @@ body {
   padding: 10px 30px;
   background-color: #fff;
 }
+
+.slide-change {
+  height: 260px;
+  width: 385px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.slide-change:hover {
+  height: 260px;
+  width: 385px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  display: block;
+}

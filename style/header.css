@@ -315,3 +315,7 @@ body > header > div > div > nav > ul > li:nth-child(2) > div {
 body > header > div > div > nav > ul > li > div:hover {
   display: block;
 }
+
+.media__724 {
+  display: none;
+}

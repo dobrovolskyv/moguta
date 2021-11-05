@@ -1,12 +1,14 @@
 @media (max-width: 1194px) {
   .container {
     width: 724px;
+    padding: 0 10px;
   }
   .top-text {
     display: none;
   }
   .header-inner__top {
     justify-content: flex-end;
+    padding: 10px 2px;
   }
   .header__search {
     display: none;
@@ -41,8 +43,40 @@
     background-color: #000;
     margin: 2px 0;
   }
+
   .nav {
-    display: none;
+    width: 100%;
+    position: relative;
+  }
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff none repeat scroll 0 0;
+    position: absolute;
+    width: 665px;
+    z-index: 999;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);
+    top: 10px;
+    left: 0;
+    right: 0;
+  }
+
+  .nav__list a {
+    font-size: 12px;
+    line-height: 16px;
+    padding: 10px;
+  }
+  .nav__item {
+    margin-top: 10px;
+    padding: 0;
+  }
+  .nav__item:last-child {
+    margin-bottom: 20px;
+  }
+  .nav > ul > li > a:hover {
+    background-color: #fff;
+    color: #9174ce;
   }
 
   /* SECTION PRODUCTS */
@@ -208,5 +242,172 @@
   .copyright {
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media (max-width: 724px) {
+  .container {
+    width: 390px;
+    padding: 10px 15px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .header-logo {
+    display: none;
+  }
+  .media__724 {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  .title__account {
+    display: none;
+  }
+  .header__search-img-media {
+    right: 190px;
+    top: 189px;
+  }
+  .header__account {
+    margin-right: 10px;
+  }
+  /*SECTION PRODUCT*/
+  .products__inner__top {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    height: 258px;
+    margin-bottom: 30px;
+  }
+  .top__slides {
+    width: 350px;
+    margin-top: 10px;
+  }
+
+  .top__subslides {
+    display: flex;
+    flex-direction: row;
+  }
+  .subslides-img {
+    width: 168px;
+    height: 91px;
+  }
+  .subslides-link:not(:last-child) {
+    margin-right: 10px;
+  }
+  .products__inner__bottom {
+    display: flex;
+    flex-direction: column;
+    margin-top: 90px;
+  }
+  .inner__bottom-link-1,
+  .inner__bottom-link-2,
+  .inner__bottom-link-3 {
+    width: 350px;
+    height: 136px;
+    margin-left: -10px;
+    margin-top: 10px;
+  }
+  /*OUR PRODUCTS*/
+  .our__products__header {
+    flex-direction: column;
+    align-items: center;
+    border: none;
+  }
+  .tabheader__items {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .tab__arrow-left {
+    right: 40px;
+  }
+  .tab__arrow-right {
+    right: 10px;
+  }
+  .tabheader__item {
+    margin-top: 10px;
+  }
+  .tabcontent__img {
+    width: 153px;
+    height: 192px;
+  }
+  .tabcontetn__img-stars {
+    width: 45%;
+  }
+  .tabcontent__price {
+    font-size: 12px;
+  }
+
+  /*SECTION BANNER*/
+  .banner__inner {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+  }
+  .inner__fashion,
+  .inner__dron {
+    width: 350px;
+    height: 150px;
+  }
+  .inner__special {
+    margin-top: 15px;
+    height: 74px;
+    width: 350px;
+  }
+  .fashion__content {
+    padding: 31px 0px 0px 202px;
+  }
+  .summer-special {
+    width: 300px;
+    padding: 16px 0px 0px 116px;
+  }
+  .fashion__title {
+    font-size: 18px;
+    line-height: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .fashion__sale {
+    line-height: 16px;
+    font-size: 14px;
+  }
+  .fashion__subtitle {
+    margin-top: 5px;
+    line-height: 15px;
+  }
+  .inner__special > div > h3 {
+    display: none;
+  }
+
+  /*SECTION SPONSORS*/
+  .sponsors__arrow-right,
+  .sponsors__arrow-left {
+    top: 40%;
+  }
+  /*SECTIOB SERVICES*/
+  .sevices__inner {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .services__inner__item img {
+    width: 50px;
+    height: 50px;
+  }
+  .services__inner__item:not(:last-child) {
+    border-right: none;
+  }
+  /*SECTION FOOTER*/
+  .copyright {
+    margin-top: 20px;
+    padding-top: 10px;
+  }
+  .pay {
+    margin-top: 10px;
   }
 }
