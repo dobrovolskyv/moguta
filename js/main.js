@@ -5,14 +5,12 @@ window.addEventListener("DOMContentLoaded", () => {
   const accountHeader = document.querySelectorAll(".header__account");
 
   account.addEventListener("click", showAccountMenu);
-  accountImg.addEventListener("click", hideAccountMenu);
 
   function showAccountMenu() {
-    accountMenu.classList.remove("hide");
-    accountMenu.classList.add("show");
+    accountMenu.classList.toggle("hide");
   }
-  function hideAccountMenu() {
-    accountMenu.classList.remove("show");
-    accountMenu.classList.add("hide");
-  }
+  // function hideAccountMenu() {
+  //   accountMenu.classList.remove("show");
+  //   accountMenu.classList.add("hide");
+  // }
 });

@@ -2,8 +2,8 @@
   padding-top: 100px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-gap: 30px;
+  grid-template-rows: repeat(1, 1fr);
+  grid-gap: 10px;
 }
 .inner__special {
   grid-column: span 2;
@@ -15,7 +15,8 @@
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 230px;
+  text-align: center;
+  height: 190px;
 }
 
 .inner__dron {
@@ -23,7 +24,7 @@
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 230px;
+  height: 190px;
 }
 
 .inner__special {
@@ -32,10 +33,8 @@
   background-repeat: no-repeat;
   text-align: left;
   background-position: center;
-}
-
-.special__descr {
-  margin: 0 auto;
+  text-align: center;
+  height: 190px;
 }
 
 .fashion__sale {

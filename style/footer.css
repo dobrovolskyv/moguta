@@ -108,9 +108,7 @@
 .socials {
   max-width: 216px;
   margin-top: 50px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
+
   cursor: pointer;
 }
 
@@ -135,4 +133,8 @@
 }
 .pay img:hover {
   opacity: 1;
+}
+
+.location__img-arrow {
+  display: none;
 }

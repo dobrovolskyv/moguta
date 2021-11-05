@@ -9,6 +9,15 @@
   align-items: center;
   font-size: 13px;
 }
+.wish-list__text:hover {
+  color: #9174ce;
+}
+.wish-list__svg path:hover {
+  fill: #9174ce;
+}
+.link__checkout:hover {
+  color: #9174ce;
+}
 
 .top__link {
   display: flex;
@@ -115,7 +124,6 @@
   min-width: 230px;
   min-height: 240px;
   z-index: 1;
-  display: none;
 }
 .account__item {
   margin-top: 10px;
@@ -190,19 +198,6 @@
   position: relative;
 }
 
-.clothes__content {
-  display: flex;
-  justify-content: space-between;
-  text-align: left;
-  font-size: 13px;
-  font-weight: 400;
-  z-index: 2;
-  box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-  padding: 25px 50px;
-  position: absolute;
-  background-color: #fff;
-}
 .clothes__title {
   margin-right: 30px;
   display: block;
@@ -228,55 +223,16 @@
   background-color: #9174ce;
   color: #fff;
 }
-.accessories__list {
-  opacity: 1;
-  background-color: #fff;
-  text-align: left;
-  font-size: 13px;
-  font-weight: 400;
-  z-index: 2;
-  box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-  padding: 10px 80px 20px 15px;
-  position: absolute;
-  display: none;
-}
+
 .accessories__item {
   margin-top: 10px;
 }
 
-.kitchen-accessories__list {
-  text-align: left;
-  font-size: 13px;
-  font-weight: 400;
-  z-index: 2;
-  box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-  padding: 10px 0px 20px 15px;
-  position: absolute;
-  background-color: #fff;
-  width: 200px;
-  display: none;
-}
 .kitchen-accessories__item {
   margin-top: 10px;
 }
 .blender__item:hover {
   color: #9174ce;
-}
-
-.more__list {
-  text-align: left;
-  font-size: 13px;
-  font-weight: 400;
-  z-index: 2;
-  box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-  padding: 10px 0px 20px 15px;
-  position: absolute;
-  background-color: #fff;
-  width: 160px;
-  display: none;
 }
 
 .more__item {
@@ -295,4 +251,67 @@
 .tabcontent__price p,
 .tabcontent__price span {
   margin-right: 10px;
+}
+.clothes__content {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 400;
+  z-index: 2;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 25px 50px;
+  position: absolute;
+  background-color: #fff;
+}
+.accessories__list {
+  opacity: 1;
+  background-color: #fff;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 400;
+  z-index: 2;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 10px 80px 20px 15px;
+  position: absolute;
+  display: none;
+}
+
+.kitchen-accessories__list {
+  text-align: left;
+  font-size: 13px;
+  font-weight: 400;
+  z-index: 2;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 10px 0px 20px 15px;
+  position: absolute;
+  background-color: #fff;
+  width: 200px;
+  display: none;
+}
+.more__list {
+  text-align: left;
+  font-size: 13px;
+  font-weight: 400;
+  z-index: 2;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 10px 0px 20px 15px;
+  position: absolute;
+  background-color: #fff;
+  width: 160px;
+  display: none;
+}
+.clothes__content:hover {
+  display: block;
+}
+body > header > div > div > nav > ul > li:nth-child(2) > div {
+  display: none;
+}
+
+body > header > div > div > nav > ul > li > div:hover {
+  display: block;
 }

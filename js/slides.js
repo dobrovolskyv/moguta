@@ -15,6 +15,20 @@ $(document).ready(function () {
     slidesToScroll: 1,
     prevArrow: `<svg class="tab__arrow-left" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M30 15C30 15.7494 29.7437 16.4682 29.2875 16.9981C28.8313 17.528 28.2126 17.8257 27.5674 17.8257H8.30116L14.6908 25.2479C15.1205 25.7836 15.3544 26.4921 15.3433 27.2241C15.3322 27.9562 15.0769 28.6546 14.6312 29.1724C14.1855 29.6901 13.5842 29.9866 12.954 29.9996C12.3238 30.0125 11.7139 29.7407 11.2527 29.2416L0.711424 16.9968C0.255877 16.467 -6.70426e-07 15.7488 -6.70426e-07 15C-6.70426e-07 14.2512 0.255877 13.533 0.711424 13.0032L11.2527 0.758391C11.7139 0.259257 12.3238 -0.012476 12.954 0.000440235C13.5842 0.0133565 14.1855 0.309913 14.6312 0.827634C15.0769 1.34535 15.3322 2.04381 15.3433 2.77587C15.3544 3.50792 15.1205 4.21641 14.6908 4.75207L8.30116 12.1743L27.5674 12.1743C28.2126 12.1743 28.8313 12.472 29.2875 13.0019C29.7437 13.5318 30 14.2506 30 15Z" fill="#C9C9C9"/></svg>`,
     nextArrow: `<svg class="tab__arrow-right" width="30" height="30" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 15.1308C0 14.3814 0.256292 13.6627 0.712494 13.1328C1.1687 12.6028 1.78744 12.3051 2.43261 12.3051H21.6988L15.3092 4.88292C14.8795 4.34725 14.6456 3.63877 14.6567 2.90672C14.6678 2.17466 14.9231 1.4762 15.3688 0.958481C15.8145 0.440761 16.4158 0.144201 17.046 0.131285C17.6762 0.118369 18.2861 0.390104 18.7473 0.889239L29.2886 13.134C29.7441 13.6638 30 14.382 30 15.1308C30 15.8797 29.7441 16.5979 29.2886 17.1277L18.7473 29.3725C18.2861 29.8716 17.6762 30.1433 17.046 30.1304C16.4158 30.1175 15.8145 29.8209 15.3688 29.3032C14.9231 28.7855 14.6678 28.087 14.6567 27.355C14.6456 26.6229 14.8795 25.9144 15.3092 25.3788L21.6988 17.9566H2.43261C1.78744 17.9566 1.1687 17.6589 0.712494 17.1289C0.256292 16.599 0 15.8803 0 15.1308Z" fill="#C9C9C9"/></svg>`,
+    responsive: [
+      {
+        breakpoint: 1194,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 780,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+    ],
   });
   $(".tabcontainer__slides-bestseller").slick({
     dots: false,
@@ -22,6 +36,20 @@ $(document).ready(function () {
     speed: 300,
     slidesToShow: 4,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1194,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 780,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+    ],
   });
   $(".tabcontainer__slides-special").slick({
     dots: false,
@@ -29,6 +57,20 @@ $(document).ready(function () {
     speed: 300,
     slidesToShow: 4,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1194,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 780,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+    ],
   });
   $(".sponsors__slides").slick({
     prevArrow: `<svg class="sponsors__arrow-left" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M30 15C30 15.7494 29.7437 16.4682 29.2875 16.9981C28.8313 17.528 28.2126 17.8257 27.5674 17.8257H8.30116L14.6908 25.2479C15.1205 25.7836 15.3544 26.4921 15.3433 27.2241C15.3322 27.9562 15.0769 28.6546 14.6312 29.1724C14.1855 29.6901 13.5842 29.9866 12.954 29.9996C12.3238 30.0125 11.7139 29.7407 11.2527 29.2416L0.711424 16.9968C0.255877 16.467 -6.70426e-07 15.7488 -6.70426e-07 15C-6.70426e-07 14.2512 0.255877 13.533 0.711424 13.0032L11.2527 0.758391C11.7139 0.259257 12.3238 -0.012476 12.954 0.000440235C13.5842 0.0133565 14.1855 0.309913 14.6312 0.827634C15.0769 1.34535 15.3322 2.04381 15.3433 2.77587C15.3544 3.50792 15.1205 4.21641 14.6908 4.75207L8.30116 12.1743L27.5674 12.1743C28.2126 12.1743 28.8313 12.472 29.2875 13.0019C29.7437 13.5318 30 14.2506 30 15Z" fill="#C9C9C9"/></svg>`,
@@ -38,6 +80,20 @@ $(document).ready(function () {
     speed: 300,
     slidesToShow: 5,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1194,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 780,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+    ],
   });
   $(".blogs__inner").slick({
     autoplay: true,
@@ -46,6 +102,20 @@ $(document).ready(function () {
     slidesToScroll: 1,
     infinite: true,
     arrows: false,
+    responsive: [
+      {
+        breakpoint: 1194,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 780,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+    ],
   });
   $(".blogs__inner").magnificPopup({
     delegate: "a",
@@ -57,5 +127,22 @@ $(document).ready(function () {
       navigateByImgClick: true,
       preload: [0, 1],
     },
+  });
+
+  $(".location__list-title").on("click", function () {
+    $(".location__list").toggle("list--active ");
+  });
+
+  $(".footer__inner-title").on("click", () => {
+    $(".info__list").toggle("list--active ");
+  });
+  $(".info-title__account").on("click", () => {
+    $(".footer__account__list").toggle("list--active ");
+  });
+  $(".info__form-title").on("click", () => {
+    $(".form__input-area ").toggle("list--active ");
+  });
+  $(".social__title").on("click", () => {
+    $(".social__list").toggle("list--active ");
   });
 });

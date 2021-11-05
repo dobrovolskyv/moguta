@@ -17,7 +17,7 @@
           <div class="header-inner__top">
             <p class="top-text">Good Luck With Shopping. Call Us Free 24/7 : (555) 172-244-7888 | (555) 172-244</p>
             <div class="top__link">
-              <ul class="top_list">
+              <!-- <ul class="top_list">
                 <li class="top_item">
                   <a href="" class="top__item-link">
                     <img src="" alt="" />
@@ -30,9 +30,9 @@
                     <p>checkout</p>
                   </a>
                 </li>
-              </ul>
+              </ul> -->
               <div class="top__wish-list">
-                <!-- <a class="wish-list__link" href="#">
+                <a class="wish-list__link" href="#">
                   <svg
                     class="wish-list__svg"
                     width="15"
@@ -47,7 +47,7 @@
                     />
                   </svg>
                   <p class="wish-list__text">Whish list<span id="whish-list-count">(0)</span></p></a
-                > -->
+                >
               </div>
 
               <a class="link__checkout" href="#">
@@ -73,7 +73,7 @@
               <div class="header__account">
                 <img class="header__right-img" src="./img/account.svg" alt="accaunt" />
                 <h2 class="account-link__title">My Account</h2>
-                <div class="account-link__menu">
+                <div class="account-link__menu hide">
                   <ul class="account__list">
                     <li class="account__item"><a href="#">Register</a></li>
                     <li class="account__item"><a href="#">Login</a></li>
@@ -120,7 +120,7 @@
               <li class="nav__item">
                 <a href="">HOME</a>
               </li>
-              <li class="nav__item hide">
+              <li class="nav__item">
                 <a href="">CLOTHES</a>
                 <div class="clothes__content">
                   <ul class="clothes__kids-list">
@@ -190,14 +190,14 @@
             <div class="products__inner__top">
               <div class="top__slides">
                 <div class="top__slide">
-                  <a href="#"><img src="./img/slide1.jpg" alt="" /></a>
+                  <a href="#"><img class="top__slide-img" src="./img/slide1.jpg" alt="" /></a>
                 </div>
                 <div class="top__slide">
-                  <a href="#"><img src="./img/slide2.jpg" alt="" /></a>
+                  <a href="#"><img class="top__slide-img" src="./img/slide2.jpg" alt="" /></a>
                 </div>
               </div>
               <div class="top__subslides">
-                <a href=""><img src="./img/banner-1.jpg" alt="" /></a>
+                <a href=""><img class="subslides-img" src="./img/banner-1.jpg" alt="" /></a>
                 <a href=""><img class="subslides-img" src="./img/banner-2.jpg" alt="" /></a>
               </div>
             </div>
@@ -503,10 +503,10 @@
               </div>
             </div>
             <div class="inner__special">
-              <div class="fashion__content">
+              <div class="fashion__content summer-special">
                 <p class="fashion__sale">LIMITED EDITION</p>
                 <h2 class="fashion__title">SUMMER SPECIAL</h2>
-                <h3 class="fashion__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                <h3 class="fashion__subtitle">Lorem ipsum dolor sit amet <br />consectetur adipisicing elit.</h3>
               </div>
             </div>
           </div>
@@ -730,7 +730,9 @@
       <div class="container">
         <div class="footer__inner">
           <div class="inner__location">
-            <ul class="location__list">
+            <h2 class="location__list-title hide">store information</h2>
+            <img class="location__img-arrow" src="./img/arrow_footer.svg" alt="" />
+            <ul class="location__list list--active">
               <li class="location__item">
                 <img class="location__img" src="./img/location.svg" alt="" class="location__img" />
                 <p class="location__text">705-Infinity Centre, Beside trafy building, united state</p>
@@ -748,8 +750,9 @@
             </ul>
           </div>
           <div class="inner__info">
-            <h2>Information</h2>
-            <ul class="info__list">
+            <h2 class="footer__inner-title">Information</h2>
+            <img class="location__img-arrow" src="./img/arrow_footer.svg" alt="" />
+            <ul class="info__list list--active">
               <li class="info__item">
                 <img src="./img/arrow_footer.svg" alt="" class="info__img" />
                 <p class="info__text">About Us</p>
@@ -769,8 +772,9 @@
             </ul>
           </div>
           <div class="inner__info">
-            <h2>MY ACCOUNT</h2>
-            <ul class="footer__account__list">
+            <h2 class="info-title__account">MY ACCOUNT</h2>
+            <img class="location__img-arrow" src="./img/arrow_footer.svg" alt="" />
+            <ul class="footer__account__list list--active">
               <li class="footer__account__item">
                 <img src="./img/arrow_footer.svg" alt="" class="account__img" />
                 <p class="footer__account__text">My Account</p>
@@ -795,16 +799,21 @@
           </div>
           <div class="info__form">
             <h2 class="info__form-title">SIGN UP FOR NEWSLETTER</h2>
-            <div class="form__input-area">
+            <img class="location__img-arrow" src="./img/arrow_footer.svg" alt="" />
+            <div class="form__input-area list--active">
               <input class="form__input" type="text" placeholder="E-Mail" />
               <button class="info__form-btn" type="submit">SUBSCRIBE</button>
             </div>
             <div class="socials">
-              <img src="./img/facebook.svg" alt="" />
-              <img src="./img/google.svg" alt="" />
-              <img src="./img/twitter.svg" alt="" />
-              <img src="./img/pinterest.svg" alt="" />
-              <img src="./img/instagram.svg" alt="" />
+              <h2 class="social__title">SOCIAL MEDIA</h2>
+              <img class="location__img-arrow" src="./img/arrow_footer.svg" alt="" />
+              <div class="social__list list--active">
+                <img src="./img/facebook.svg" alt="" />
+                <img src="./img/google.svg" alt="" />
+                <img src="./img/twitter.svg" alt="" />
+                <img src="./img/pinterest.svg" alt="" />
+                <img src="./img/instagram.svg" alt="" />
+              </div>
             </div>
           </div>
         </div>
