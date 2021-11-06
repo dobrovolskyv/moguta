@@ -3,11 +3,6 @@
   display: flex;
   justify-content: space-between;
 }
-.socials img {
-  background-color: #e8e8e8;
-  border-radius: 50%;
-  padding: 10px;
-}
 
 .location__item {
   display: flex;
@@ -108,8 +103,16 @@
 .socials {
   max-width: 216px;
   margin-top: 50px;
-
   cursor: pointer;
+}
+.social__title {
+  display: none;
+}
+
+.socials img {
+  background-color: #e8e8e8;
+  border-radius: 50%;
+  padding: 10px;
 }
 
 .copyright {

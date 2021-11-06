@@ -13,3 +13,6 @@
 .specials__inner {
   margin-top: 100px;
 }
+.slides-special {
+  display: block;
+}

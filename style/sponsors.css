@@ -30,3 +30,8 @@
 .sponsors__arrow-right path:hover {
   fill: black;
 }
+
+.sponsors__arrow-left,
+.sponsors__arrow-right {
+  visibility: hidden;
+}

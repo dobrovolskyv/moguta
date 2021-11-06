@@ -6,6 +6,7 @@
   .top-text {
     display: none;
   }
+
   .header-inner__top {
     justify-content: flex-end;
     padding: 10px 2px;
@@ -13,29 +14,20 @@
   .header__search {
     display: none;
   }
+  .header__right-div {
+    margin-left: 190px;
+  }
   .header__search-media {
     display: block;
+    width: 100%;
+    display: flex;
+    align-items: center;
   }
-  .header__search-img-media {
-    background: #9174ce;
-    position: absolute;
-    border-radius: 0 5px 5px 0;
-    -webkit-border-radius: 0 5px 5px 0;
-    -khtml-border-radius: 0 5px 5px 0;
-    -moz-border-radius: 0 5px 5px 0;
-    color: #000000;
-    height: 40px;
-    right: 250px;
-    top: 130px;
-    width: 50px;
-    transition: all 500ms ease 0s;
-    -webkit-transition: all 500ms ease 0s;
-    -moz-transition: all 500ms ease 0s;
-    -ms-transition: all 500ms ease 0s;
-    -o-transition: all 500ms ease 0s;
-  }
+
   .burger {
     display: block;
+    margin-right: 30px;
+    cursor: pointer;
   }
   .burger div {
     width: 25px;
@@ -60,6 +52,7 @@
     top: 10px;
     left: 0;
     right: 0;
+    visibility: hidden;
   }
 
   .nav__list a {
@@ -74,9 +67,23 @@
   .nav__item:last-child {
     margin-bottom: 20px;
   }
-  .nav > ul > li > a:hover {
+  /* .nav > ul > li > a:hover {
     background-color: #fff;
     color: #9174ce;
+  } */
+  .nav > ul > li.nav__item > ul > li a:hover {
+    color: #9174ce;
+  }
+  .clothes__item:hover {
+    color: #9174ce;
+  }
+
+  .nav > ul > li > a:hover {
+    background-color: #9174ce;
+    color: #fff;
+  }
+  .list--visiable {
+    visibility: visible;
   }
 
   /* SECTION PRODUCTS */
@@ -99,7 +106,8 @@
   .top__subslides {
     margin-top: -7px;
   }
-  .subslides-img {
+  .subslides-img-1,
+  .subslides-img-2 {
     width: 100%;
     height: 100%;
   }
@@ -107,7 +115,8 @@
     display: none;
     visibility: hidden;
   }
-  .subslides-img {
+  .subslides-img-1,
+  .subslides-img-2 {
     margin-top: 10px;
   }
   .products__inner__bottom {
@@ -149,6 +158,9 @@
     font-size: 12px;
   }
   /* SECTION BANNER*/
+  .banner__inner {
+    padding-top: 0px;
+  }
   .inner__fashion,
   .inner__dron,
   .inner__special:not() {
@@ -239,6 +251,9 @@
   .social__list {
     flex-direction: row;
   }
+  .social__title {
+    display: block;
+  }
   .copyright {
     flex-direction: column;
     align-items: center;
@@ -291,7 +306,8 @@
     display: flex;
     flex-direction: row;
   }
-  .subslides-img {
+  .subslides-img-1,
+  .subslides-img-2 {
     width: 168px;
     height: 91px;
   }

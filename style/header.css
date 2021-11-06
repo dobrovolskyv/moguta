@@ -9,14 +9,20 @@
   align-items: center;
   font-size: 13px;
 }
-.wish-list__text:hover {
+.top-text:hover {
   color: #9174ce;
 }
-.wish-list__svg path:hover {
+.wish-list__svg {
+  margin-right: 10px;
+}
+
+.change-color {
+  color: #9174ce;
   fill: #9174ce;
 }
-.link__checkout:hover {
-  color: #9174ce;
+
+.checkout__img {
+  margin-right: 10px;
 }
 
 .top__link {
@@ -62,33 +68,40 @@
   -ms-transition: all 500ms ease 0s;
   -o-transition: all 500ms ease 0s;
   padding-left: 5px;
+  padding-right: -10px;
 }
 .burger {
   display: none;
 }
-
-.header__search-img {
+.search__btn {
   background: #9174ce;
-  position: absolute;
   border-radius: 0 5px 5px 0;
   -webkit-border-radius: 0 5px 5px 0;
   -khtml-border-radius: 0 5px 5px 0;
   -moz-border-radius: 0 5px 5px 0;
   color: #000000;
   height: 40px;
-  right: 358px;
-  top: 0px;
-  width: 50px;
+  width: 54px;
   transition: all 500ms ease 0s;
   -webkit-transition: all 500ms ease 0s;
   -moz-transition: all 500ms ease 0s;
   -ms-transition: all 500ms ease 0s;
   -o-transition: all 500ms ease 0s;
+  padding-left: -2px;
+  border: none;
 }
+.header__search {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0 150px;
+}
+
 .header__right-div {
   display: flex;
   position: relative;
   cursor: pointer;
+  width: 700px;
 }
 .header__right-div img {
   margin-right: 10px;
@@ -107,9 +120,26 @@
   font-size: 15px;
   font-weight: 600;
 }
-
-.header__right-div h2:hover {
-  color: #9174ce;
+.header__cart-span {
+  background: #9174ce;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -khtml-border-radius: 50%;
+  -moz-border-radius: 50%;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 600;
+  left: 22px;
+  line-height: 13px;
+  padding: 1px 4px 2px 4px;
+  position: absolute;
+  top: -6px;
+  z-index: 1;
+  align-items: center;
+  text-align: center;
+}
+.header__cart-span--hover {
+  background: #000;
 }
 .account-link__menu {
   background: #fff;
@@ -123,7 +153,7 @@
   top: 51px;
   min-width: 230px;
   min-height: 240px;
-  z-index: 1;
+  z-index: 7;
 }
 .account__item {
   margin-top: 10px;
@@ -160,12 +190,13 @@
   padding-bottom: -5px;
 }
 
-/* .account-link__menu {
-  display: none;
-} */
 .header__cart {
   display: inline-flex;
   align-items: center;
+  position: relative;
+}
+.header__right-img-cart {
+  margin-right: 10px;
 }
 .hide {
   display: none;
@@ -188,6 +219,7 @@
   line-height: 18px;
   border-bottom: 1px solid #e8e8e8;
   border-top: 1px solid #e8e8e8;
+  z-index: 6;
 }
 .nav__item {
   margin: 10px 20px;
@@ -200,7 +232,6 @@
 
 .clothes__title {
   margin-right: 30px;
-  display: block;
   font-weight: 500;
   color: #9174ce;
   padding: 5px 0;
@@ -234,6 +265,19 @@
 .blender__item:hover {
   color: #9174ce;
 }
+.blender__list {
+  opacity: 1;
+  background-color: #fff;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 400;
+  z-index: 5;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 10px 80px 20px 15px;
+  position: absolute;
+  right: 10px;
+}
 
 .more__item {
   margin-top: 10px;
@@ -254,7 +298,6 @@
 }
 .clothes__content {
   display: flex;
-  justify-content: space-between;
   text-align: left;
   font-size: 13px;
   font-weight: 400;
@@ -264,6 +307,8 @@
   padding: 25px 50px;
   position: absolute;
   background-color: #fff;
+  width: 610px;
+  visibility: hidden;
 }
 .accessories__list {
   opacity: 1;
@@ -276,7 +321,7 @@
   border-radius: 5px;
   padding: 10px 80px 20px 15px;
   position: absolute;
-  display: none;
+  visibility: hidden;
 }
 
 .kitchen-accessories__list {
@@ -290,7 +335,7 @@
   position: absolute;
   background-color: #fff;
   width: 200px;
-  display: none;
+  visibility: hidden;
 }
 .more__list {
   text-align: left;
@@ -303,19 +348,16 @@
   position: absolute;
   background-color: #fff;
   width: 160px;
-  display: none;
-}
-.clothes__content:hover {
-  display: block;
-}
-body > header > div > div > nav > ul > li:nth-child(2) > div {
-  display: none;
+  visibility: hidden;
 }
 
-body > header > div > div > nav > ul > li > div:hover {
-  display: block;
+.list--active {
+  visibility: visible;
 }
-
 .media__724 {
+  display: none;
+}
+
+.blender__list {
   display: none;
 }
