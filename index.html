@@ -36,7 +36,7 @@
                   <p class="wish-list__text">Whish list<span id="whish-list-count">(0)</span></p></a
                 >
               </div>
-              <div class="top__checkout-list">
+              <div class="top__checkout-list" id="list">
                 <a class="link__checkout" href="#">
                   <svg
                     class="checkout__img"
@@ -132,6 +132,9 @@
                 </svg>
                 <span class="header__cart-span">0</span>
                 <h2 class="account-link__title title__cart">My Cart</h2>
+                <div class="account-link__menu-cart hide">
+                  <p class="link__menu-text">Your shopping cart is empty!</p>
+                </div>
               </div>
             </div>
           </div>
@@ -143,6 +146,7 @@
           </div>
           <nav class="nav">
             <ul class="nav__list">
+              <div class="nav__list-content"></div>
               <li class="nav__item">
                 <a href="">HOME</a>
               </li>
@@ -254,16 +258,15 @@
               <a class="tabheader__item tabheader__item--active" href="#tab1">Latest</a>
               <a class="tabheader__item" href="#tab2">Bestseller</a>
               <a class="tabheader__item" href="#tab3">Special</a>
-              <!-- <div class="tabheader__item tabheader__item--active"><a href="#tab1">Latest</a></div>
-              <div class="tabheader__item"><a href="#tab2">Bestseller</a></div>
-              <div class="tabheader__item"><a href="#tab3">Special</a></div> -->
             </div>
           </div>
           <div class="our_products__tabcontainer">
             <div class="tabcontainer__slides tabcontainer__slides--active" id="tab1">
               <div class="tabcontent">
-                <img class="tabcontent__img" src="./img/tabslide-1.jpg" alt="" />
-                <!-- <img class="tabcontent__img swap_img" src="./img/tabslide-2.jpg" alt="" /> -->
+                <div class="tabcontent__img-container">
+                  <img class="tabcontent__img-1" src="./img/tabslide-1.jpg" alt="" />
+                  <img class="tabcontent__img-2" src="./img/tabslide-2.jpg" alt="" />
+                </div>
                 <h3 class="tabcontent__title">Foramationdi Venkash BOWWOW</h3>
                 <img class="tabcontetn__img-stars" src="./img/5_stars.svg" alt="" />
                 <div class="tabcontent__raiting"></div>
@@ -275,7 +278,10 @@
                 <button class="tabcontent__btn" type="submit">ADD TO CART</button>
               </div>
               <div class="tabcontent">
-                <img class="tabcontent__img" src="./img/tabslide-2.jpg" alt="" />
+                <div class="tabcontent__img-container">
+                  <img class="tabcontent__img-1" src="./img/tabslide-2.jpg" alt="" />
+                  <img class="tabcontent__img-2" src="./img/tabslide-3.jpg" alt="" />
+                </div>
                 <h3 class="tabcontent__title">Foramationdi Venkash</h3>
                 <img class="tabcontetn__img-stars" src="./img/3_stars.svg" alt="" />
                 <div class="tabcontent__raiting"></div>
@@ -287,7 +293,10 @@
                 <button class="tabcontent__btn" type="submit">ADD TO CART</button>
               </div>
               <div class="tabcontent">
-                <img class="tabcontent__img" src="./img/tabslide-3.jpg" alt="" />
+                <div class="tabcontent__img-container">
+                  <img class="tabcontent__img-1" src="./img/tabslide-3.jpg" alt="" />
+                  <img class="tabcontent__img-2" src="./img/tabslide-5.jpg" alt="" />
+                </div>
                 <h3 class="tabcontent__title">Foramationdi Venkash</h3>
                 <img class="tabcontetn__img-stars" src="./img/5_stars.svg" alt="" />
                 <div class="tabcontent__raiting"></div>
@@ -299,7 +308,10 @@
                 <button class="tabcontent__btn" type="submit">ADD TO CART</button>
               </div>
               <div class="tabcontent">
-                <img class="tabcontent__img" src="./img/tabslide-4.jpg" alt="" />
+                <div class="tabcontent__img-container">
+                  <img class="tabcontent__img-1" src="./img/tabslide-4.jpg" alt="" />
+                  <img class="tabcontent__img-2" src="./img/tabslide-1.jpg" alt="" />
+                </div>
                 <h3 class="tabcontent__title">Foramationdi Venkash</h3>
                 <img class="tabcontetn__img-stars" src="./img/5gold_stars.svg" alt="" />
                 <div class="tabcontent__raiting"></div>
@@ -311,7 +323,10 @@
                 <button class="tabcontent__btn" type="submit">ADD TO CART</button>
               </div>
               <div class="tabcontent">
-                <img class="tabcontent__img" src="./img/tabslide-5.jpg" alt="" />
+                <div class="tabcontent__img-container">
+                  <img class="tabcontent__img-1" src="./img/tabslide-5.jpg" alt="" />
+                  <img class="tabcontent__img-2" src="./img/tabslide-1.jpg" alt="" />
+                </div>
                 <h3 class="tabcontent__title">Foramationdi Venkash</h3>
                 <div class="tabcontent__raiting"></div>
                 <div class="tabcontent__price">
@@ -322,7 +337,10 @@
                 <button class="tabcontent__btn" type="submit">ADD TO CART</button>
               </div>
               <div class="tabcontent">
-                <img class="tabcontent__img" src="./img/tabslide-1.jpg" alt="" />
+                <div class="tabcontent__img-container">
+                  <img class="tabcontent__img-1" src="./img/tabslide-1.jpg" alt="" />
+                  <img class="tabcontent__img-2" src="./img/tabslide-2.jpg" alt="" />
+                </div>
                 <h3 class="tabcontent__title">Foramationdi Venkash</h3>
                 <div class="tabcontent__raiting"></div>
                 <div class="tabcontent__price">
@@ -333,7 +351,10 @@
                 <button class="tabcontent__btn" type="submit">ADD TO CART</button>
               </div>
               <div class="tabcontent">
-                <img class="tabcontent__img" src="./img/tabslide-2.jpg" alt="" />
+                <div class="tabcontent__img-container">
+                  <img class="tabcontent__img-1" src="./img/tabslide-2.jpg" alt="" />
+                  <img class="tabcontent__img-2" src="./img/tabslide-3.jpg" alt="" />
+                </div>
                 <h3 class="tabcontent__title">Foramationdi Venkash</h3>
                 <div class="tabcontent__raiting"></div>
                 <div class="tabcontent__price">
@@ -344,7 +365,10 @@
                 <button class="tabcontent__btn" type="submit">ADD TO CART</button>
               </div>
               <div class="tabcontent">
-                <img class="tabcontent__img" src="./img/tabslide-3.jpg" alt="" />
+                <div class="tabcontent__img-container">
+                  <img class="tabcontent__img-1" src="./img/tabslide-3.jpg" alt="" />
+                  <img class="tabcontent__img-2" src="./img/tabslide-4.jpg" alt="" />
+                </div>
                 <h3 class="tabcontent__title">Foramationdi Venkash</h3>
                 <div class="tabcontent__raiting"></div>
                 <div class="tabcontent__price">
@@ -355,7 +379,10 @@
                 <button class="tabcontent__btn" type="submit">ADD TO CART</button>
               </div>
               <div class="tabcontent">
-                <img class="tabcontent__img" src="./img/tabslide-4.jpg" alt="" />
+                <div class="tabcontent__img-container">
+                  <img class="tabcontent__img-1" src="./img/tabslide-4.jpg" alt="" />
+                  <img class="tabcontent__img-2" src="./img/tabslide-5.jpg" alt="" />
+                </div>
                 <h3 class="tabcontent__title">Foramationdi Venkash</h3>
                 <div class="tabcontent__raiting"></div>
                 <div class="tabcontent__price">
@@ -366,7 +393,10 @@
                 <button class="tabcontent__btn" type="submit">ADD TO CART</button>
               </div>
               <div class="tabcontent">
-                <img class="tabcontent__img" src="./img/tabslide-5.jpg" alt="" />
+                <div class="tabcontent__img-container">
+                  <img class="tabcontent__img-1" src="./img/tabslide-1.jpg" alt="" />
+                  <img class="tabcontent__img-2" src="./img/tabslide-2.jpg" alt="" />
+                </div>
                 <h3 class="tabcontent__title">Foramationdi Venkash</h3>
                 <div class="tabcontent__raiting"></div>
                 <div class="tabcontent__price">
@@ -379,7 +409,10 @@
             </div>
             <div class="tabcontainer__slides" id="tab2">
               <div class="tabcontent">
-                <img class="tabcontent__img" src="./img/tabslide-1.jpg" alt="" />
+                <div class="tabcontent__img-container">
+                  <img class="tabcontent__img-1" src="./img/tabslide-2.jpg" alt="" />
+                  <img class="tabcontent__img-2" src="./img/tabslide-3.jpg" alt="" />
+                </div>
                 <h3 class="tabcontent__title">Foramationdi Venkash</h3>
                 <div class="tabcontent__raiting"></div>
                 <div class="tabcontent__price">
@@ -390,7 +423,10 @@
                 <button class="tabcontent__btn" type="submit">ADD TO CART</button>
               </div>
               <div class="tabcontent">
-                <img class="tabcontent__img" src="./img/tabslide-2.jpg" alt="" />
+                <div class="tabcontent__img-container">
+                  <img class="tabcontent__img-1" src="./img/tabslide-3.jpg" alt="" />
+                  <img class="tabcontent__img-2" src="./img/tabslide-4.jpg" alt="" />
+                </div>
                 <h3 class="tabcontent__title">Foramationdi Venkash</h3>
                 <div class="tabcontent__raiting"></div>
                 <div class="tabcontent__price">
@@ -401,7 +437,10 @@
                 <button class="tabcontent__btn" type="submit">ADD TO CART</button>
               </div>
               <div class="tabcontent">
-                <img class="tabcontent__img" src="./img/tabslide-3.jpg" alt="" />
+                <div class="tabcontent__img-container">
+                  <img class="tabcontent__img-1" src="./img/tabslide-4.jpg" alt="" />
+                  <img class="tabcontent__img-2" src="./img/tabslide-5.jpg" alt="" />
+                </div>
                 <h3 class="tabcontent__title">Foramationdi Venkash</h3>
                 <div class="tabcontent__raiting"></div>
                 <div class="tabcontent__price">
@@ -412,7 +451,10 @@
                 <button class="tabcontent__btn" type="submit">ADD TO CART</button>
               </div>
               <div class="tabcontent">
-                <img class="tabcontent__img" src="./img/tabslide-4.jpg" alt="" />
+                <div class="tabcontent__img-container">
+                  <img class="tabcontent__img-1" src="./img/tabslide-1.jpg" alt="" />
+                  <img class="tabcontent__img-2" src="./img/tabslide-2.jpg" alt="" />
+                </div>
                 <h3 class="tabcontent__title">Foramationdi Venkash</h3>
                 <div class="tabcontent__raiting"></div>
                 <div class="tabcontent__price">
@@ -423,7 +465,10 @@
                 <button class="tabcontent__btn" type="submit">ADD TO CART</button>
               </div>
               <div class="tabcontent">
-                <img class="tabcontent__img" src="./img/tabslide-5.jpg" alt="" />
+                <div class="tabcontent__img-container">
+                  <img class="tabcontent__img-1" src="./img/tabslide-2.jpg" alt="" />
+                  <img class="tabcontent__img-2" src="./img/tabslide-3.jpg" alt="" />
+                </div>
                 <h3 class="tabcontent__title">Foramationdi Venkash</h3>
                 <div class="tabcontent__raiting"></div>
                 <div class="tabcontent__price">
@@ -436,7 +481,10 @@
             </div>
             <div class="tabcontainer__slides" id="tab3">
               <div class="tabcontent">
-                <img class="tabcontent__img" src="./img/tabslide-1.jpg" alt="" />
+                <div class="tabcontent__img-container">
+                  <img class="tabcontent__img-1" src="./img/tabslide-3.jpg" alt="" />
+                  <img class="tabcontent__img-2" src="./img/tabslide-4.jpg" alt="" />
+                </div>
                 <h3 class="tabcontent__title">Foramationdi Venkash</h3>
                 <div class="tabcontent__raiting"></div>
                 <div class="tabcontent__price">
@@ -447,7 +495,10 @@
                 <button class="tabcontent__btn" type="submit">ADD TO CART</button>
               </div>
               <div class="tabcontent">
-                <img class="tabcontent__img" src="./img/tabslide-2.jpg" alt="" />
+                <div class="tabcontent__img-container">
+                  <img class="tabcontent__img-1" src="./img/tabslide-4.jpg" alt="" />
+                  <img class="tabcontent__img-2" src="./img/tabslide-5.jpg" alt="" />
+                </div>
                 <h3 class="tabcontent__title">Foramationdi Venkash</h3>
                 <div class="tabcontent__raiting"></div>
                 <div class="tabcontent__price">
@@ -458,7 +509,10 @@
                 <button class="tabcontent__btn" type="submit">ADD TO CART</button>
               </div>
               <div class="tabcontent">
-                <img class="tabcontent__img" src="./img/tabslide-3.jpg" alt="" />
+                <div class="tabcontent__img-container">
+                  <img class="tabcontent__img-1" src="./img/tabslide-5.jpg" alt="" />
+                  <img class="tabcontent__img-2" src="./img/tabslide-1.jpg" alt="" />
+                </div>
                 <h3 class="tabcontent__title">Foramationdi Venkash</h3>
                 <div class="tabcontent__raiting"></div>
                 <div class="tabcontent__price">
@@ -469,7 +523,10 @@
                 <button class="tabcontent__btn" type="submit">ADD TO CART</button>
               </div>
               <div class="tabcontent">
-                <img class="tabcontent__img" src="./img/tabslide-4.jpg" alt="" />
+                <div class="tabcontent__img-container">
+                  <img class="tabcontent__img-1" src="./img/tabslide-1.jpg" alt="" />
+                  <img class="tabcontent__img-2" src="./img/tabslide-2.jpg" alt="" />
+                </div>
                 <h3 class="tabcontent__title">Foramationdi Venkash</h3>
                 <div class="tabcontent__raiting"></div>
                 <div class="tabcontent__price">
@@ -480,7 +537,10 @@
                 <button class="tabcontent__btn" type="submit">ADD TO CART</button>
               </div>
               <div class="tabcontent">
-                <img class="tabcontent__img" src="./img/tabslide-5.jpg" alt="" />
+                <div class="tabcontent__img-container">
+                  <img class="tabcontent__img-1" src="./img/tabslide-2.jpg" alt="" />
+                  <img class="tabcontent__img-2" src="./img/tabslide-3.jpg" alt="" />
+                </div>
                 <h3 class="tabcontent__title">Foramationdi Venkash</h3>
                 <div class="tabcontent__raiting"></div>
                 <div class="tabcontent__price">
@@ -491,7 +551,10 @@
                 <button class="tabcontent__btn" type="submit">ADD TO CART</button>
               </div>
               <div class="tabcontent">
-                <img class="tabcontent__img" src="./img/tabslide-3.jpg" alt="" />
+                <div class="tabcontent__img-container">
+                  <img class="tabcontent__img-1" src="./img/tabslide-3.jpg" alt="" />
+                  <img class="tabcontent__img-2" src="./img/tabslide-4.jpg" alt="" />
+                </div>
                 <h3 class="tabcontent__title">Foramationdi Venkash</h3>
                 <div class="tabcontent__raiting"></div>
                 <div class="tabcontent__price">
@@ -502,7 +565,10 @@
                 <button class="tabcontent__btn" type="submit">ADD TO CART</button>
               </div>
               <div class="tabcontent">
-                <img class="tabcontent__img" src="./img/tabslide-4.jpg" alt="" />
+                <div class="tabcontent__img-container">
+                  <img class="tabcontent__img-1" src="./img/tabslide-4.jpg" alt="" />
+                  <img class="tabcontent__img-2" src="./img/tabslide-5.jpg" alt="" />
+                </div>
                 <h3 class="tabcontent__title">Foramationdi Venkash</h3>
                 <div class="tabcontent__raiting"></div>
                 <div class="tabcontent__price">
@@ -549,7 +615,10 @@
             <h1 class="spceials__title">SPECIAL</h1>
             <div class="tabcontainer__slides slides-special">
               <div class="tabcontent">
-                <img class="tabcontent__img" src="./img/tabslide-1.jpg" alt="" />
+                <div class="tabcontent__img-container">
+                  <img class="tabcontent__img-1" src="./img/tabslide-1.jpg" alt="" />
+                  <img class="tabcontent__img-2" src="./img/tabslide-2.jpg" alt="" />
+                </div>
                 <h3 class="tabcontent__title">Foramationdi Venkash</h3>
                 <div class="tabcontent__raiting"></div>
                 <div class="tabcontent__price">
@@ -560,7 +629,10 @@
                 <button class="tabcontent__btn" type="submit">ADD TO CART</button>
               </div>
               <div class="tabcontent">
-                <img class="tabcontent__img" src="./img/tabslide-2.jpg" alt="" />
+                <div class="tabcontent__img-container">
+                  <img class="tabcontent__img-1" src="./img/tabslide-2.jpg" alt="" />
+                  <img class="tabcontent__img-2" src="./img/tabslide-3.jpg" alt="" />
+                </div>
                 <h3 class="tabcontent__title">Foramationdi Venkash</h3>
                 <div class="tabcontent__raiting"></div>
                 <div class="tabcontent__price">
@@ -571,7 +643,10 @@
                 <button class="tabcontent__btn" type="submit">ADD TO CART</button>
               </div>
               <div class="tabcontent">
-                <img class="tabcontent__img" src="./img/tabslide-3.jpg" alt="" />
+                <div class="tabcontent__img-container">
+                  <img class="tabcontent__img-1" src="./img/tabslide-3.jpg" alt="" />
+                  <img class="tabcontent__img-2" src="./img/tabslide-4.jpg" alt="" />
+                </div>
                 <h3 class="tabcontent__title">Foramationdi Venkash</h3>
                 <div class="tabcontent__raiting"></div>
                 <div class="tabcontent__price">
@@ -582,7 +657,10 @@
                 <button class="tabcontent__btn" type="submit">ADD TO CART</button>
               </div>
               <div class="tabcontent">
-                <img class="tabcontent__img" src="./img/tabslide-4.jpg" alt="" />
+                <div class="tabcontent__img-container">
+                  <img class="tabcontent__img-1" src="./img/tabslide-4.jpg" alt="" />
+                  <img class="tabcontent__img-2" src="./img/tabslide-5.jpg" alt="" />
+                </div>
                 <h3 class="tabcontent__title">Foramationdi Venkash</h3>
                 <div class="tabcontent__raiting"></div>
                 <div class="tabcontent__price">
@@ -593,7 +671,10 @@
                 <button class="tabcontent__btn" type="submit">ADD TO CART</button>
               </div>
               <div class="tabcontent">
-                <img class="tabcontent__img" src="./img/tabslide-5.jpg" alt="" />
+                <div class="tabcontent__img-container">
+                  <img class="tabcontent__img-1" src="./img/tabslide-5.jpg" alt="" />
+                  <img class="tabcontent__img-2" src="./img/tabslide-1.jpg" alt="" />
+                </div>
                 <h3 class="tabcontent__title">Foramationdi Venkash</h3>
                 <div class="tabcontent__raiting"></div>
                 <div class="tabcontent__price">
@@ -604,7 +685,10 @@
                 <button class="tabcontent__btn" type="submit">ADD TO CART</button>
               </div>
               <div class="tabcontent">
-                <img class="tabcontent__img" src="./img/tabslide-1.jpg" alt="" />
+                <div class="tabcontent__img-container">
+                  <img class="tabcontent__img-1" src="./img/tabslide-1.jpg" alt="" />
+                  <img class="tabcontent__img-2" src="./img/tabslide-2.jpg" alt="" />
+                </div>
                 <h3 class="tabcontent__title">Foramationdi Venkash</h3>
                 <div class="tabcontent__raiting"></div>
                 <div class="tabcontent__price">
@@ -615,7 +699,10 @@
                 <button class="tabcontent__btn" type="submit">ADD TO CART</button>
               </div>
               <div class="tabcontent">
-                <img class="tabcontent__img" src="./img/tabslide-2.jpg" alt="" />
+                <div class="tabcontent__img-container">
+                  <img class="tabcontent__img-1" src="./img/tabslide-2.jpg" alt="" />
+                  <img class="tabcontent__img-2" src="./img/tabslide-3.jpg" alt="" />
+                </div>
                 <h3 class="tabcontent__title">Foramationdi Venkash</h3>
                 <div class="tabcontent__raiting"></div>
                 <div class="tabcontent__price">
@@ -626,7 +713,10 @@
                 <button class="tabcontent__btn" type="submit">ADD TO CART</button>
               </div>
               <div class="tabcontent">
-                <img class="tabcontent__img" src="./img/tabslide-3.jpg" alt="" />
+                <div class="tabcontent__img-container">
+                  <img class="tabcontent__img-1" src="./img/tabslide-3.jpg" alt="" />
+                  <img class="tabcontent__img-2" src="./img/tabslide-4.jpg" alt="" />
+                </div>
                 <h3 class="tabcontent__title">Foramationdi Venkash</h3>
                 <div class="tabcontent__raiting"></div>
                 <div class="tabcontent__price">
@@ -637,7 +727,10 @@
                 <button class="tabcontent__btn" type="submit">ADD TO CART</button>
               </div>
               <div class="tabcontent">
-                <img class="tabcontent__img" src="./img/tabslide-4.jpg" alt="" />
+                <div class="tabcontent__img-container">
+                  <img class="tabcontent__img-1" src="./img/tabslide-4.jpg" alt="" />
+                  <img class="tabcontent__img-2" src="./img/tabslide-5.jpg" alt="" />
+                </div>
                 <h3 class="tabcontent__title">Foramationdi Venkash</h3>
                 <div class="tabcontent__raiting"></div>
                 <div class="tabcontent__price">
@@ -648,7 +741,10 @@
                 <button class="tabcontent__btn" type="submit">ADD TO CART</button>
               </div>
               <div class="tabcontent">
-                <img class="tabcontent__img" src="./img/tabslide-5.jpg" alt="" />
+                <div class="tabcontent__img-container">
+                  <img class="tabcontent__img-1" src="./img/tabslide-5.jpg" alt="" />
+                  <img class="tabcontent__img-2" src="./img/tabslide-1.jpg" alt="" />
+                </div>
                 <h3 class="tabcontent__title">Foramationdi Venkash</h3>
                 <div class="tabcontent__raiting"></div>
                 <div class="tabcontent__price">
@@ -762,9 +858,10 @@
       <div class="container">
         <div class="footer__inner">
           <div class="inner__location">
+            <img class="inner__info-store-arrow accordeon_arrow" src="./img/accordeon_arrow.png" alt="arrow" />
             <h2 class="location__list-title hide">store information</h2>
             <img class="location__img-arrow" src="./img/arrow_footer.svg" alt="" />
-            <ul class="location__list list--active">
+            <ul class="location__list">
               <li class="location__item">
                 <img class="location__img" src="./img/location.svg" alt="" class="location__img" />
                 <p class="location__text">705-Infinity Centre, Beside trafy building, united state</p>
@@ -782,9 +879,10 @@
             </ul>
           </div>
           <div class="inner__info">
+            <img class="inner__info-arrow accordeon_arrow" src="./img/accordeon_arrow.png" alt="arrow" />
             <h2 class="footer__inner-title">Information</h2>
-            <img class="location__img-arrow" src="./img/arrow_footer.svg" alt="" />
-            <ul class="info__list list--active">
+            <img class="location__img-arrow" src="./img/arrow_footer.svg" alt="arrow" />
+            <ul class="info__list">
               <li class="info__item">
                 <img src="./img/arrow_footer.svg" alt="" class="info__img" />
                 <p class="info__text">About Us</p>
@@ -804,9 +902,10 @@
             </ul>
           </div>
           <div class="inner__info">
+            <img class="inner__info-account-arrow accordeon_arrow" src="./img/accordeon_arrow.png" alt="arrow" />
             <h2 class="info-title__account">MY ACCOUNT</h2>
-            <img class="location__img-arrow" src="./img/arrow_footer.svg" alt="" />
-            <ul class="footer__account__list list--active">
+            <img class="location__img-arrow" src="./img/arrow_footer.svg" alt="arrow" />
+            <ul class="footer__account__list">
               <li class="footer__account__item">
                 <img src="./img/arrow_footer.svg" alt="" class="account__img" />
                 <p class="footer__account__text">My Account</p>
@@ -830,16 +929,18 @@
             </ul>
           </div>
           <div class="info__form">
+            <img class="inner__info-sign-arrow accordeon_arrow" src="./img/accordeon_arrow.png" alt="arrow" />
             <h2 class="info__form-title">SIGN UP FOR NEWSLETTER</h2>
-            <img class="location__img-arrow" src="./img/arrow_footer.svg" alt="" />
-            <div class="form__input-area list--active">
+            <img class="location__img-arrow" src="./img/arrow_footer.svg" alt="arrow" />
+            <div class="form__input-area">
               <input class="form__input" type="text" placeholder="E-Mail" />
               <button class="info__form-btn" type="submit">SUBSCRIBE</button>
             </div>
             <div class="socials">
+              <img class="inner__info-social-arrow accordeon_arrow" src="./img/accordeon_arrow.png" alt="" />
               <h2 class="social__title">SOCIAL MEDIA</h2>
-              <img class="location__img-arrow" src="./img/arrow_footer.svg" alt="" />
-              <div class="social__list list--active">
+              <img class="location__img-arrow" src="./img/arrow_footer.svg" alt="arrow" />
+              <div class="social__list">
                 <img src="./img/facebook.svg" alt="" />
                 <img src="./img/google.svg" alt="" />
                 <img src="./img/twitter.svg" alt="" />
@@ -858,10 +959,10 @@
             <img src="./img/Paypal.png" alt="paypal" />
             <img src="./img/Paypal.png" alt="paypal" />
           </div>
+          <div class="arrow__to-move">
+            <a class="footer-arrow__link-movie" href="#list">&#8593;</a>
+          </div>
         </div>
-        <a class="footer-arrow__link-movie" href="#"
-          ><img class="footer-arrow__img-movie" src="./img/arrow_footer.svg" alt=""
-        /></a>
       </div>
     </footer>
 

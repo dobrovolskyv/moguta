@@ -141,6 +141,21 @@
 .header__cart-span--hover {
   background: #000;
 }
+.account-link__menu-cart {
+  background: #fff;
+  display: flex;
+  box-shadow: 0 0 7px rgb(0, 0, 0);
+  font-size: 13px;
+  padding: 20px 50px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 51px;
+  min-width: 300px;
+  min-height: 70px;
+  z-index: 7;
+}
+
 .account-link__menu {
   background: #fff;
   display: flex;

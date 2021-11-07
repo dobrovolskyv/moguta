@@ -2,6 +2,7 @@
   margin-top: 100px;
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .location__item {
@@ -16,7 +17,8 @@
   margin-right: 10px;
 }
 
-.inner__info img {
+.info__img,
+.account__img {
   transform: rotate(180deg);
   margin-right: 10px;
 }
@@ -109,7 +111,7 @@
   display: none;
 }
 
-.socials img {
+.socials > div img {
   background-color: #e8e8e8;
   border-radius: 50%;
   padding: 10px;
@@ -121,6 +123,7 @@
   justify-content: space-between;
   border-top: 1px solid #e8e8e8;
   padding-top: 30px;
+  position: relative;
 }
 
 .copyright__text {
@@ -140,4 +143,42 @@
 
 .location__img-arrow {
   display: none;
+}
+.accordeon_arrow {
+  display: none;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+.inner__info-store-arrow,
+.inner__info-account-arrow,
+.inner__info-sign-arrow,
+.inner__info-social-arrow {
+  right: 20px;
+}
+.inner__info-arrow {
+  right: 20px;
+  transform: rotateX(360deg);
+}
+
+.rotate__accordeon-arrow {
+  transition: all 1s linear;
+  transform: rotateX(-180deg);
+}
+.arrow__to-move {
+  width: 50px;
+  height: 50px;
+  background-color: #9174ce;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  padding-top: 10px;
+  border-radius: 5px;
+  position: fixed;
+  display: none;
+}
+.footer-arrow__link-movie {
+  scroll-behavior: smooth;
+  font-size: 24px;
 }

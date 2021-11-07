@@ -8,7 +8,7 @@
 
 .sponsors__slides img {
   margin-right: 30px;
-  /* width: 10%; */
+
   opacity: 0.2;
 }
 .sponsors__slides img:hover {
@@ -30,7 +30,6 @@
 .sponsors__arrow-right path:hover {
   fill: black;
 }
-
 .sponsors__arrow-left,
 .sponsors__arrow-right {
   visibility: hidden;
